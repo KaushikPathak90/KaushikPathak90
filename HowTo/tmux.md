@@ -9,6 +9,7 @@ Reference: hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/
       3. [Creating](#sessions-existing-creating)
       4. [Creating with specific name](#sessions-existing-creating-name)
       5. [Renaming](#sessions-existing-renaming)
+      6. [Detaching](#sessions-existing-detaching)
    2. [Windows](#sessions-windows)
       1. [Create](#sessions-windows-create)
       2. [Switching](#sessions-windows-switching)
@@ -45,6 +46,10 @@ Reference: hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/
 <a name='sessions-existing-renaming'></a>
 ### Renaming
 `tmux rename-session -t 0 <User-Defined-Name>`
+
+<a name='sessions-existing-detaching'></a>
+### Detaching
+`Ctrl + b, then d`
 
 <a name='sessions-windows'></a>
 ## Windows
