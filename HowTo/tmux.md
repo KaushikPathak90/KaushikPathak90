@@ -12,9 +12,11 @@ Reference: hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/
       6. [Detaching](#sessions-existing-detaching)
    2. [Windows](#sessions-windows)
       1. [Create](#sessions-windows-create)
-      2. [Switching](#sessions-windows-switching)
-      3. [Resize](#sessions-windows-resize)
-      4. [Splitting](#sessions-windows-splitting)
+      2. [Renaming](#sessions-windows-renaming)
+      3. [Switching](#sessions-windows-switching)
+      4. [Scrolling](#sessions-windows-scrolling)
+      5. [Resize](#sessions-windows-resize)
+      6. [Splitting](#sessions-windows-splitting)
 
 <a name='installations'></a>
 # Installation  
@@ -58,11 +60,22 @@ Reference: hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/
 ### Create
 `Ctrl + b, then c`
 
+<a name='sessions-windows-renaming'></a>
+### Renaming
+`Ctrl + b, then ,`  
+`tmux rename-window <new name>`  
+`tmux rename-window -t <otherwindow> <new name>`  
+`Ctrl-b : rename-window <new name>`  
+
 <a name='sessions-windows-switching'></a>
 ### Switching
 `Ctrl + b, then p`    : Previous  
 `Ctrl + b, then n`    : Next  
 `Ctrl + b, then <id>` : Specific Id  
+
+<a name='sessions-windows-scrolling'></a>
+### Scrolling
+`Ctrl + b, then [, then UpArrow/DownArrow`
 
 <a name='sessions-windows-resize'></a>
 ### Resize
