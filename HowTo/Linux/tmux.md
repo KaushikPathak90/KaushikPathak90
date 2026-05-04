@@ -65,6 +65,7 @@ Reference: hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/
 `Ctrl + b, then ,`  
 `tmux rename-window <new name>`  
 `tmux rename-window -t <otherwindow> <new name>`  
+
 `Ctrl-b : rename-window <new name>`  
 
 <a name='sessions-windows-switching'></a>
@@ -85,4 +86,20 @@ Reference: hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/
 
 <a name='sessions-windows-splitting'></a>
 ### Splitting
-`Ctrl + b, then %` : Haven't tried
+`Ctrl + b, then %` : Splits the current pane horizontally (side-by-side)
+
+`Ctrl + b, then "` : Splits the current pane vertically (stacked top-to-bottom)
+
+#### Reorganize
+`Ctrl + Space` : Switches between default tmux layouts
+
+#### Parallel command execution(Draft)
+```
+#Ctrl + b : set-window-option automatic-resize on  
+Ctrl + b : set-window-option synchronize-panes on
+```
+
+#### If unable to copy
+```
+Ctrl + b : set -g mouse off
+```
